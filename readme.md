@@ -5,3 +5,5 @@
 "卧槽，我不写，谁爱写谁写"
 
 在线：[FlyIcon](http://dwqs.github.io/FlyIcon/)
+
+(请clone gh-pages 分支)
