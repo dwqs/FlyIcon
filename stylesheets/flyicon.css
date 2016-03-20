@@ -1,0 +1,139 @@
+.flyicon-list{
+    list-style: none;
+    margin: 0 auto;
+}
+
+.flyicon-item{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+}
+
+.flyicon{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    width: 90px;
+    height: 90px;
+}
+
+.icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*transition:transform .5s;*/
+}
+
+.icon:hover{
+    cursor: pointer;
+    /*transform: scale(2,2);*/
+}
+
+.icon-desc{
+    position: absolute;
+    font-size: 14px;
+}
+
+/*关闭*/
+.icon-close:before,.icon-close:after{
+    position: absolute;
+    top: -2px;
+    left: -15px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background: #333;
+}
+
+.icon-close:before{
+    transform: rotateZ(45deg);
+}
+
+.icon-close:after{
+    transform: rotateZ(-45deg);
+}
+
+/*三角系列*/
+.triangle{
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+}
+
+/*上三角*/
+.icon-upper-triangle{
+    transform: translate(-30px,-22px);
+    border-bottom: 15px solid #333;
+}
+
+/*右三角*/
+.icon-right-triangle{
+    transform: translate(-22px,-15px);
+    border-left: 15px solid #333;
+}
+
+/*下三角*/
+.icon-lower-triangle{
+    transform: translate(-30px,-7px);
+    border-top: 15px solid #333;
+}
+
+/*左三角*/
+.icon-left-triangle{
+    transform: translate(-40px,-7px);
+    border-right: 15px solid #333;
+}
+
+/*箭头系类*/
+.arrow{
+    left: 20px;
+}
+
+.arrow:before,.arrow:after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 3px;
+    background: #333;
+}
+
+/*上箭头*/
+.icon-upper-arrow:before{
+    left: -12px;
+    transform: rotateZ(-45deg);
+}
+.icon-upper-arrow:after{
+    transform: rotateZ(45deg);
+}
+
+/*右箭头*/
+.icon-right-arrow:before{
+    transform: rotateZ(45deg);
+}
+.icon-right-arrow:after{
+    top: 12px;
+    transform: rotateZ(-45deg);
+}
+
+/*下箭头*/
+.icon-lower-arrow:before{
+    left: -12px;
+    transform: rotateZ(45deg);
+}
+.icon-lower-arrow:after{
+    transform: rotateZ(-45deg);
+}
+
+/*左箭头*/
+.icon-left-arrow:before{
+    transform: rotateZ(-45deg);
+}
+.icon-left-arrow:after{
+    top: 12px;
+    transform: rotateZ(45deg);
+}
