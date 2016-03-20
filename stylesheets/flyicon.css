@@ -137,3 +137,189 @@
     top: 12px;
     transform: rotateZ(45deg);
 }
+
+/*排序*/
+.order{
+    left: 20px;
+    height: 30px;
+    width: 5px;
+    background: #333;
+}
+
+.order-up:before{
+    position: absolute;
+    top: -20px;
+    left: -7.3px;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #333;
+}
+
+.order-down{
+    top: 35px;
+}
+
+.order-down:after{
+    position: absolute;
+    top: 30px;
+    left: -7.3px;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 10px solid #333;
+}
+
+/*更多*/
+.more{
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border-radius: 50%;
+}
+
+.more:before,.more:after{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border-radius: 50%;
+}
+
+.more:before{
+    left: -15px;
+}
+
+.more:after{
+    left: 15px;
+}
+
+/*列表*/
+.list{
+    left: 20px;
+}
+
+.list span{
+    display: block;
+    width: 35px;
+    height: 5px;
+    background: #333;
+    margin-top: 10px;
+}
+
+.list:before{
+    position: absolute;
+    left: 5px;
+    content: '';
+    width: 5px;
+    height: 35px;
+    background: white;
+}
+
+/*缩略图*/
+.thumbnail{
+    left: 20px;
+    width: 45px;
+    height: 45px;
+    background: #333;
+}
+
+.thumbnail:before{
+    position: absolute;
+    top: 20px;
+    content: '';
+    width: 45px;
+    height: 5px;
+    background: white;
+}
+
+.thumbnail:after{
+    position: absolute;
+    left: 20px;
+    content: '';
+    width: 5px;
+    height: 45px;
+    background: white;
+    transform: rotateZ(-180deg);
+}
+
+/*上传，下载*/
+.download,.upload{
+    left: 20px;
+    top: 85px;
+}
+
+.download span,.upload span{
+    display: block;
+}
+
+.download span:first-child,.upload span:first-child{
+    width: 45px;
+    height: 0;
+    border-bottom: 5px solid #333;
+}
+
+.download span:first-child:before, .download span:first-child:after,
+.upload span:first-child:before, .upload span:first-child:after{
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 12px;
+    background: #333;
+}
+
+.download span:first-child:before,.upload span:first-child:before{
+    top: -12px;
+}
+
+.download span:first-child:after,.upload span:first-child:after{
+    top: -12px;
+    left: 40px;
+}
+
+.download span:last-child,.upload span:last-child{
+    position: absolute;
+    top: -35px;
+    left: 20px;
+    width: 6px;
+    height: 30px;
+    background: #333;
+}
+
+.download span:last-child:before,.download span:last-child:after,
+.upload span:last-child:before,.upload span:last-child:after{
+    position: absolute;
+    top: 11px;
+    content: '';
+    width: 5px;
+    height: 20px;
+    background: #333;
+}
+
+.download span:last-child:before{
+    left: -8px;
+    transform: rotateZ(-45deg);
+}
+
+.download span:last-child:after{
+    left: 8px;
+    transform: rotateZ(45deg);
+}
+
+.upload span:last-child:before,.upload span:last-child:after{
+    top: -1px;
+}
+
+.upload span:last-child:before{
+    left: -8px;
+    transform: rotateZ(45deg);
+}
+
+.upload span:last-child:after{
+    left: 8px;
+    transform: rotateZ(-45deg);
+}
