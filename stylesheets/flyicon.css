@@ -616,3 +616,115 @@
     background: #fff;
     border:8px solid #333;
 }
+
+/*start:皮卡丘手机壳*/
+.pikachu-flyicon-item-1{
+    width: 330px;
+}
+
+.pikachu-icon-desc{
+    position: absolute;
+    top: 10px;
+    font-size: 14px;
+}
+
+.pikachu-flyicon-1{
+    top: 65px;
+    left: 215px;
+    width: 226px;
+    background: yellow;
+}
+
+.pickchu-eye-1, .pikachu-face-1{
+    position: relative;
+    height: 42px;
+}
+
+.pikachu-left-eye-1,.pikachu-right-eye-1{
+    position: absolute;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    background: #333;
+    border-radius: 13px/15px;
+}
+
+.pikachu-left-eye-1{
+    left: 60px;
+    transform: rotateZ(15deg);
+}
+
+.pikachu-right-eye-1{
+    right: 60px;
+    transform: rotateZ(-15deg);
+}
+
+.pikachu-left-eye-1:before,.pikachu-right-eye-1:before{
+    position: absolute;
+    content: '';
+    top: 2px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.pikachu-left-eye-1:before{
+    left: 8px;
+}
+
+.pikachu-right-eye-1:before{
+    left: 6px;
+}
+
+.pikachu-left-face-1,.pikachu-right-face-1{
+    position: absolute;
+    top: 5px;
+    width: 34px;
+    height: 34px;
+    background: pink;
+    border-radius: 17px;
+}
+
+.pikachu-left-face-1{
+    left: 40px;
+}
+
+.pikachu-right-face-1{
+    right: 40px;
+}
+
+.pikachu-mouth-1{
+    position: absolute;
+    top: 35px;
+    left: 85px;
+    z-index: 2;
+    width: 58px;
+    height: 44px;
+}
+
+.pikachu-left-mouth-1{
+    position: absolute;
+    top: 5px;
+    left: 13px;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #333;
+    border-right: 5px solid #333;
+    transform: rotateZ(45deg);
+    border-radius: 30px 0;
+}
+
+.pikachu-left-mouth-1:before{
+    position: absolute;
+    left: 2px;
+    top: 5px;
+    content: '';
+    width: 10px;
+    height: 5px;
+    border-radius: 50%;
+    background: #333;
+    transform: rotateZ(-45deg);
+}
+
+/*end:皮卡丘手机壳*/
