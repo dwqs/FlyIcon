@@ -728,3 +728,57 @@
 }
 
 /*end:皮卡丘手机壳*/
+
+/*放大缩小*/
+.zoom-in,.zoom-out{
+    top: 70px;
+    left: 17px;
+    width: 25px;
+    height: 5px;
+    background: #333;
+    border-radius: 3px 0 0 3px;
+    transform: rotateZ(-45deg);
+}
+
+.zoom-circle{
+    top: 40px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 4px solid #333;
+}
+
+.zoom-circle:after,.zoom-in + .zoom-circle:before{
+    position: absolute;
+    top: 8px;
+    left: 6px;
+    content: '';
+    width: 10px;
+    height: 4px;
+    background: #333;
+}
+
+.zoom-in + .zoom-circle:before{
+    transform: rotateZ(-90deg);
+}
+
+/*禁用*/
+.forbidden{
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 4px solid #333;
+}
+
+.forbidden:before{
+    position: absolute;
+    top: 10px;
+    left: -1px;
+    content: '';
+    width: 25px;
+    height: 4px;
+    background: #333;
+    transform: rotateZ(45deg);
+}
