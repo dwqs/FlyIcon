@@ -782,3 +782,58 @@
     background: #333;
     transform: rotateZ(45deg);
 }
+
+/*成功/失败*/
+.success,.failure{
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.success{
+    background: #15bf5b;
+}
+
+.success:before,.success:after,
+.failure:before,.failure:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+}
+
+.success:before{
+    top: 15px;
+    left: 3px;
+    width: 12px;
+    background: #19281f;
+    transform: rotateZ(45deg);
+}
+
+.success:after{
+    top: 13px;
+    left: 9px;
+    width: 17px;
+    background: #19281f;
+    transform: rotateZ(-45deg);
+}
+
+.failure{
+    background: #f00;
+}
+
+.failure:before,.failure:after{
+    top: 13px;
+    left: 7px;
+    height: 2px;
+    width: 17px;
+    background: #fff;
+}
+
+.failure:before{
+    transform: rotateZ(45deg);
+}
+
+.failure:after{
+    transform: rotateZ(-45deg);
+}
