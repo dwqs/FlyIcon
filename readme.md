@@ -1,2 +1,2 @@
 
-无聊时用css写的一些icons, 在线：[Flyicon](http://dwqs.github.io/Flyicon/)
+无聊时用css写的一些icons, 在线：[icons](http://dwqs.github.io/icons/)
